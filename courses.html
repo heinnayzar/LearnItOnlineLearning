@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>LearnIt Learn Today Lead Tomorrow</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>Have any Question?</span>
+            <span><i class="fa fa-envelope"></i> adminsupport@example.com</span>
+        </div>
+        <div class="enroll-now">
+            Only Few Seats Left - <a href="#" class="enroll-link">Enroll Now</a>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="Images/learn It.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li class="dropdown visited">
+                <a href="courses.html" class="dropbtn">Courses</a>
+                <!-- <div class="dropdown-content">
+                    <a href="#">Korean</a>
+                    <a href="#">Japanese</a>
+                    <a href="#">English</a>
+                </div> -->
+            </li>
+            <li><a href="Cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="login-register">
+            <a href="loginRegister.html" class="login-btn">Login / Register</a>
+        </div>
+    </nav>    
+
+    <header class="hero-section">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="breadcrumb1">Courses</h1>
+                <nav class="breadcrumb">
+                    <span>Learn Today Lead Tomorrow</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="header">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="korean">Korean</button>
+        <button class="filter-btn" data-category="japanese">Japanese</button>
+        <button class="filter-btn" data-category="english">English</button>
+    </div>
+    
+    <div class="course-container">
+        <div class="course-card korean">
+            <div class="course-image">
+                <img src="Images/How to Ask _What is your email__ in Korean.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Korean Basic</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">29900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Korean Basic Course', 29900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card japanese">
+            <div class="course-image">
+                <img src="Images/japanese course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Japanese N5</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">29900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Japanese N5 Course', 29900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card english">
+            <div class="course-image">
+                <img src="Images/Premium Vector _ Doodle of foreign language education course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">English Basic</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">29900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('English Basic Course', 29900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card korean">
+            <div class="course-image">
+                <img src="Images/How to Ask _What is your email__ in Korean.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Korean Level 1-1</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Korean Level 1-1 Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card japanese"> 
+            <div class="course-image">
+                <img src="Images/japanese course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Japanese N4</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Japanese N4 Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card english">
+            <div class="course-image">
+                <img src="Images/Premium Vector _ Doodle of foreign language education course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Elementary</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Elementary Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card korean">
+            <div class="course-image">
+                <img src="Images/How to Ask _What is your email__ in Korean.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Korean Level 1-2</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Korean Level 1-2 Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card japanese">
+            <div class="course-image">
+                <img src="Images/japanese course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Japanese N3</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Japanese N3 Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card english">
+            <div class="course-image">
+                <img src="Images/Premium Vector _ Doodle of foreign language education course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Pre-Intermediate</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">49900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Pre-Intermediate Course', 49900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card korean">
+            <div class="course-image">
+                <img src="Images/How to Ask _What is your email__ in Korean.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Korean Level 2-1</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">69900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Korean Level 2-1 Course', 69900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card japanese">
+            <div class="course-image">
+                <img src="Images/japanese course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Japanese N2</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">69900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Japanese N2 Course', 69900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card english">
+            <div class="course-image">
+                <img src="Images/Premium Vector _ Doodle of foreign language education course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Intermediate</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">69900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Intermediate Course', 69900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card korean">
+            <div class="course-image">
+                <img src="Images/How to Ask _What is your email__ in Korean.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Korean Level 2-2</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">99900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Korean Level 2-2 Course', 99900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card japanese"> 
+            <div class="course-image">
+                <img src="Images/japanese course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Japanese N1</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">99900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Japanese N1 Course', 99900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card english">
+            <div class="course-image">
+                <img src="Images/Premium Vector _ Doodle of foreign language education course.jpg" alt="Course Image">
+            </div>
+            <div class="course-info">
+                <p class="course-date"><i class="fa fa-calendar-alt"></i> 17 Nov, 2022</p>
+                <p class="course-details"><i class="fa fa-book"></i> 1 Curriculum <i class="fa fa-user"></i> 3 Students</p>
+                <h2 class="course-title">Upper Intermediate</h2>
+                <p class="course-description">Learn how to start your own affiliate marketing business and make money online.</p>
+                <p class="course-price">
+                    <span class="current-price">99900 Kyats</span>
+                </p>
+                <div class="course-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <!-- New button element -->
+                    <button class="enroll-btn" onclick="addToCart('Upper Intermediate Course', 99900)">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat similar blocks for other courses -->
+    </div>
+
+    <footer class="footerContainer">
+        <div class="footerBtnContainer">
+            <button class="footerBtn">Be A Volunteer</button>
+            <button class="footerBtn">Success Stories</button>
+            <button class="footerBtn">Support Forum</button>
+            <button class="footerBtn">Internships</button>
+            <button class="footerBtn">Help Center</button>
+        </div>
+
+        <div class="footerLinksContainer">
+            <div class="footerContactUs">
+                <h1>Ready To Get Started?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, ipsa inventore. Maiores dolorum placeat, in rem mollitia consequuntur</p>
+                <section class="stay-in-touch">
+                    <div class="StayContainer">
+                        <p>Subscribe to our newsletter and stay updated on the latest courses and offers!</p>
+                        <form class="subscribe-form">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button class="stayBtn" type="submit">Stay in Touch</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="footerMainMenu">
+                <p class="linkTitles">Main Menu</p>
+                <ul class="footerLinks">
+                    <li>About Us</li>
+                    <li>Brand Partners</li>
+                    <li>Careers</li>
+                    <li>My Account</li>
+                    <li>Press Release</li>
+                </ul>
+            </div>
+
+            <div class="footerSupport">
+                <p class="linkTitles">Support</p>
+                <ul class="footerLinks">
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                    <li>Help</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="footerCompany">
+                <p class="linkTitles">Company</p>
+                <ul class="footerLinks">
+                    <li>24/7 Support</li>
+                    <li>Locate Us</li>
+                    <li>For Investors</li>
+                    <li>Gallery</li>
+                    <li>Event Details</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="home.js"></script>
+    <script src="courses.js"></script>
+    <script src="Cart.js"></script>
+</body>
+</html>
